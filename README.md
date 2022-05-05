@@ -1,2 +1,2 @@
 # pseudo
-Codigo de interes para la materia
+Codigo de interés para la materia
