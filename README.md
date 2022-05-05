@@ -1,2 +1,2 @@
 # pseudo
-Codigo en pseudocodigo para PSEInt
+Codigo de interes para la materia
