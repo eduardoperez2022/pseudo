@@ -15,6 +15,8 @@ public class recibo {
     
     public void construir(String pnombre, String pimporte, String pconcepto, String pfecha) {
 
+        String salida="";
+        
         String Plantilla = "------------------------------------------------------------\n\n";
         Plantilla = Plantilla.concat("Recibo – Fecha <fecha>\n\n");
         Plantilla = Plantilla.concat("Recibí del Sr/a <nombre> la cantidad de pesos <importe> por\n");
@@ -23,10 +25,19 @@ public class recibo {
         Plantilla = Plantilla.concat("  Firma emisor                               Firma receptor\n");
         Plantilla = Plantilla.concat("------------------------------------------------------------\n\n");
         
-
-        this.construido = Plantilla;
+        salida = Plantilla;
+        
+        salida = salida.replace("<nombre>", pnombre);
+        salida = salida.replace("<importe>", pimporte);
+        salida = salida.replace("<concepto>", pconcepto);
+        salida = salida.replace("<fecha>", pfecha);
+        
+        this.construido = salida;
         
     }
 
-    
+    public String getConstruido() {
+        return construido;
+    }
+
 }
