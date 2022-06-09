@@ -18,8 +18,18 @@ public class proceso {
         // Nueva Cadena: (52)-5-6284000
         String salida = "";
         
+        salida = salida.concat("(");
+        salida = salida.concat(ptelefono.substring(0, 2));
+        salida = salida.concat(")-");
+        salida = salida.concat(ptelefono.substring(2, 3));
+        salida = salida.concat("-");
+        salida = salida.concat(ptelefono.substring(3));
         
+        this.formateado = salida;
     }
 
+    public String getFormateado() {
+        return formateado;
+    }
 
 }
