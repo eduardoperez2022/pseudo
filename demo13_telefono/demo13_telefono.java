@@ -1,8 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+D201- Escribir un programa en java que lea un texto desde consola que representa los 10 dígitos de
+un número telefónico en formato de cadena, y luego lo convierta y muestre de la siguiente manera:
+Número Telefónico: 5256284000
+Nueva Cadena: (52)-5-6284000
+El texto final construido debe quedar en una variable de la clase proceso. Luego imprimir en pantalla el
+resultado del texto construido 
+*/
 package demo13_telefono;
 
 /**
