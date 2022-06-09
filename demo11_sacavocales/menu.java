@@ -23,7 +23,16 @@ public class menu {
         this.frase = sc.nextLine();
 
         proceso proc = new proceso();
-
+        proc.saca_vocales(this.frase);
+        
+        String salida1 = proc.getConstruido();
+        
+        proc.saca_vocales2(this.frase);
+        
+        String salida2 = proc.getConstruido();
+        
+        System.out.println("Salida metodo 1: " + salida1);
+        System.out.println("Salida metodo 2: " + salida2);
 
     }
 }
