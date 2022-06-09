@@ -28,6 +28,14 @@ public class menu {
         this.concepto = sc.nextLine();
         this.fecha = sc.nextLine();
         
+        recibo rec = new recibo();
+        rec.construir(nombre, importe, concepto, fecha);
+        
+        String elrecibo = rec.getConstruido();
+        
+        System.out.println("");
+        System.out.println("");
+        System.out.println(elrecibo);
         
     }
 }
