@@ -22,7 +22,12 @@ public class menu {
         System.out.println("Ingrese un numero telefonico de 10 cifras:");    
         this.telefono = sc.nextLine();
 
+        proceso proc = new proceso();
+        proc.formateo(this.telefono);
         
+        String resultado = proc.getFormateado();
+        
+        System.out.println(resultado);
         
     }
 
